@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-position: left top, right bottom ;
+    background-repeat: no-repeat;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    max-width: 1200px;
+}
+
+.introduction {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-left: 1rem;
+}
+
+.introduction p {
+    line-height: 1.5;
+    margin-bottom: 3rem;
+    font-size: 1rem;
+}
+
+.ratings {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    margin-top: 2rem;
+}
+
+.buyer1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.buyer2{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    top: 1rem;
+    position: relative;
+}
+
+.buyer3{
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    position: relative;
+    top: 2rem;
+}
+
+.buyers{
+    padding: 2rem;
+    background-color: hsl(300, 43%, 22%);
+    margin: 0 1rem;
+    border-radius: 1rem;
+    color: white;
+    max-height: 250px;
+}
+
+.buyers img {
+    border-radius: 50%;
+    max-height: 3rem;
+}
+
+.buyer-header {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.buyer-text {
+    line-height: 1.5;
+}
+
+.name {
+    margin: 0;
+    font-weight: 700;
+}
+
+.verified {
+    margin: 0.2rem 0 0 0;
+    color:hsl(333, 80%, 67%);
+}
+
+.introduction h1 {
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+
+.introduction p {
+    color: hsl(303, 10%, 53%);
+}
+
+.rating-box{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    background-color:hsl(300, 24%, 96%);
+    border-radius: 1rem;
+    padding: .5rem 2rem;
+    justify-content: left;
+    margin-bottom: 1rem;
+}
+
+.guru {
+    margin-left: 4rem;
+}
+
+.best-tech {
+    margin-left: 8rem;
+}
+
+.reviews
+{
+    margin-right: 8rem;
+}
+
+.guru {
+    margin-right: 4rem;
+}
+
+@media screen and (max-width:860px){
+
+.wrapper {
+    display: block;
+}
+
+body {
+    background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+}
+
+.introduction {
+    text-align: center;
+}
+
+.rating-box{
+    display: block;
+    text-align: center;
+}
+
+.guru {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.best-tech {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.reviews {
+    margin-right: 0;
+}
+
+.ratings {
+    margin-bottom: 2rem;
+}
+
+}
